@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Assistant', sans-serif;
+  margin: 0;
+}
+h2 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 250%;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2%;
+}
+h3 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 175%;
+  line-height: 155%;
+  padding: 5% 0;
+  font-weight: 400;
+}
+p {
+  font-size: 160%;
+  line-height: 150%;
+  padding: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+header {
+  background-color: #000000;
+  width: 100%;
+  height: 86px;
+}
+#header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#logo{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 250%;
+  font-weight: 700;
+  margin: 15px;
+  float: left;
+  height: 50px;
+  padding: 0 0 0 30px;
+}
+#logo:hover {
+  color: #C5B358;
+}
+/* Start Navigation */
+nav {
+  float: right;
+  padding: 25px 50px 0 0;
+}
+#menu-icon{
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(img/nav.png) center;
+}
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
+}
+ul {
+  list-style-type: none;
+}
+nav ul li {
+  font-family: 'Assistant', sans-serif;
+  font-size: 150;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul li a:hover {
+  color: #C5B358;
+  border-bottom: 2px solid #C5B358;
+}
+.current {
+  border-bottom: 2px solid currentcolor;
+}
+/* End nav */
+.banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #000000;
+  width: 100%;
+  background-color: #fffafa
+}
+.banner-inner {
+  color: #000000;
+  font-size: 107%;
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
+}
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover{
+  color: #C5B358;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Begin footer */
+footer {
+  font-family: 'Assistant', sans-serif;
+  border-top: 2px solid #ffffff;
+  background-color: #000000;
+  width: 100%;
+}
+.social {
+  list-style-type: none;
+  text-align: center;
+}
+.social li {
+  display: inline
+}
+.social i{
+  font-size: 300%;
+  margin: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #ffffff;
+}
+.social i:hover{
+  color: #C5B358;
+}
+footer.second {
+  border-top: 2px solid #ffffff;
+  background-color: #000000;
+  max-height: 20px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/* Media */
+@media screen and (max-width; 768px) {
+  h2 {
+    font size: 150%;
+  }
+  h3 {
+    font size: 125%;
+  }
+  p {
+    font-size: 120%;
+  }
+  header {
+    position: absolute;
+  }
+  #logo {
+    margin: 15px 0 20 -25px;
+    background: url(img/Naim_Ayat_Header.png) no-repeat center;
+  }
+  #menu-icon{
+    display: inline-block;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #000000;
+    right: 20px;
+    top: 60px;
+    border: 1px solid #FFF;
+    border-radius: 2px 0 2px 2px;
+    width: 50%;
+  }
+  nav:hover ul{
+    display: block;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner {
+    padding-top: 86px;
+  }
+
+  .social i {
+    font-size: 100%;
+  }
+}
