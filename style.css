@@ -155,7 +155,7 @@ footer.second {
 }
 
 /* Media */
-@media screen and (max-width; 320px) {
+@media screen and (max-width; 1024px) {
   h2 {
     font size: 150%;
   }
@@ -198,7 +198,6 @@ footer.second {
   .banner {
     padding-top: 86px;
   }
-
   .social i {
     font-size: 100%;
   }
