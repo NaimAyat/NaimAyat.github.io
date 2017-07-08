@@ -47,7 +47,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
-#logo{
+#logo {
   color: #ffffff;
   text-decoration: none;
   font-family: 'Assistant', sans-serif;
@@ -155,7 +155,7 @@ footer.second {
 }
 
 /* Media */
-@media screen and (max-width; 768px) {
+@media screen and (max-width; 320px) {
   h2 {
     font size: 150%;
   }
@@ -170,7 +170,7 @@ footer.second {
   }
   #logo {
     margin: 15px 0 20 -25px;
-    background: url(img/Naim_Ayat_Header.png) no-repeat center;
+    background: url(img/Resized_Header.png) no-repeat center;
   }
   #menu-icon{
     display: inline-block;
