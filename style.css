@@ -155,7 +155,7 @@ footer.second {
 }
 
 /* Media */
-@media screen and (max-width; 1024px) {
+@media screen and (max-width; 2000px) {
   h2 {
     font size: 150%;
   }
