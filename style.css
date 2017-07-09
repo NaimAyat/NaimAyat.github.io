@@ -107,7 +107,7 @@ nav ul li a:hover {
 .banner-inner {
   color: #000000;
   font-size: 107%;
-  max-width: 605px;
+  max-width: 600px;
   text-align: justify;
   margin: 0 auto;
 }
@@ -222,7 +222,7 @@ footer.second {
   .banner-inner {
     color: #000000;
     font-size: 105%;
-    max-width: 300px;
+    max-width: 305px;
     text-align: justify;
     margin: 0 auto;
   }
