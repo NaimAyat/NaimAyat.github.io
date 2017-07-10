@@ -244,8 +244,8 @@ and (max-device-width : 667px) {
     text-align: justify;
     margin: 0 auto;
   .banner {
-    padding-top: 200x;
-    padding-bottom: 115px;
+    padding-top: 220x;
+    padding-bottom: 135px;
     color: #000000;
     width: 100%;
   }
