@@ -152,6 +152,7 @@ footer {
 }
 footer.second a:link {
     color: #FFFFFF;
+    font-weight: lighter;
 }
 footer.second a:visited{
     color: #FFFFFF;
@@ -232,7 +233,6 @@ footer.second {
   }
   footer.second {
     font-size: 50%;
-    font-weight: ligher;
   }
 }
 @media only screen /* For iPhone 6 and 7 */
