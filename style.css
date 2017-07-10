@@ -232,6 +232,7 @@ footer.second {
   }
   footer.second {
     font-size: 50%;
+    font-weight: ligher;
   }
 }
 @media only screen /* For iPhone 6 and 7 */
