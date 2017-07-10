@@ -240,7 +240,13 @@ and (max-device-width : 667px) {
   .banner-inner {
     color: #000000;
     max-width: 286px;
-    font-size: 125%;
+    font-size: 123%;
     text-align: justify;
     margin: 0 auto;
+  .banner {
+    padding-top: 210px;
+    padding-bottom: 125px;
+    color: #000000;
+    width: 100%;
+  }
 }
