@@ -239,7 +239,7 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) {
   .banner-inner {
     color: #000000;
-    max-width: 285px;
+    max-width: 290px;
     font-size: 94.6%;
     text-align: justify;
     margin: 0 auto;
