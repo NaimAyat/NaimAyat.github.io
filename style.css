@@ -63,6 +63,7 @@ header {
 }
 /* Start Navigation */
 nav {
+  z-index: 100000;
   float: right;
   padding: 25px 30px 0 0;
 }
@@ -102,15 +103,15 @@ nav ul li a:hover {
   padding-bottom: 155px;
   color: #000000;
   width: 100%;
-  background: #fffafa; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#fffafa, #B8B8B8); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fffafa, #B8B8B8); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fffafa, #B8B8B8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fffafa, #B8B8B8); /* Standard syntax */
-
+  background: url("img/home-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  background-position: fix;
+  z-index: -1;
 }
 .banner-inner {
-  color: #404040;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px 20px rgba(0,0,0,0.6);
+  color: #ffffff;
   font-size: 107%;
   max-width: 600px;
   text-align: justify;
@@ -182,6 +183,7 @@ footer.second {
     font-size: 120%;
   }
   header {
+    z-index: 1000;
     position: absolute;
   }
   #logo {
@@ -200,7 +202,6 @@ footer.second {
   }
   nav ul, nav:active ul {
     display: none;
-    z-index: 1000;
     position: absolute;
     background: #000000;
     right: 20px;
@@ -219,6 +220,7 @@ footer.second {
     padding-top: 220px;
     padding-bottom: 135px;
     color: #000000;
+    background-position: 45%;
     width: 100%;
   }
   .banner-inner {
