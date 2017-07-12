@@ -218,6 +218,7 @@ footer.second {
   .banner {
     padding-top: 220px;
     padding-bottom: 135px;
+    background: url("img/home-bg.png") no-repeat center center fixed;
     color: #000000;
     width: 100%;
   }
