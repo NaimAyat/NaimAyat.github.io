@@ -238,7 +238,7 @@ footer.second {
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
   .banner-inner {
-    color: #000000;
+    color: #ffffff;
     max-width: 290px;
     font-size: 94%;
     text-align: justify;
@@ -246,7 +246,7 @@ and (max-device-width : 667px) {
   .banner {
     padding-top: 220x;
     padding-bottom: 135px;
-    color: #000000;
+    color: #ffffff;
     width: 100%;
   }
 }
