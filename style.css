@@ -101,7 +101,7 @@ nav ul li a:hover {
 .banner {
   padding-top: 155px;
   padding-bottom: 155px;
-  color: #000000;
+  color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
   background-size: cover;
@@ -218,7 +218,7 @@ footer.second {
     padding-top: 220px;
     padding-bottom: 135px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
-    color: #000000;
+    color: #ffffff;
     width: 100%;
   }
   .banner-inner {
