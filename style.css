@@ -220,6 +220,7 @@ footer.second {
     padding-top: 220px;
     padding-bottom: 135px;
     color: #000000;
+    background: url("img/mobile-home-bg.png") no-repeat center center fixed;
     background-position: top;
     width: 100%;
   }
