@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 
 form {
-
   background-color: rgba(0,0,0,0.6);
   margin: 0 auto;
   width: 400px;
@@ -20,6 +19,7 @@ label {
   width: 90px;
   text-align: right;
 }
+
 input, textarea {
   padding: 5px;
   font-size: 100%;
