@@ -203,7 +203,7 @@ footer.second {
 
 /* END FOOTER */
 
-/* Media */
+/* General handheld devices & small browser windows */
 @media screen and (max-width: 1024px) {
   h2 {
     font size: 150%;
@@ -269,7 +269,8 @@ footer.second {
   }
 }
 
-@media only screen /* For iPhone 6 and 7 */
+/* iPhone 6 and 7 */
+@media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
   .banner-inner {
