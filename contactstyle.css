@@ -36,6 +36,7 @@ textarea {
   height: 5em;
 }
 button {
+  display: inline-block;
   background:none;
   border:none;
   font-size:1em;
@@ -61,12 +62,6 @@ button {
 .button:hover {
   background: #C5B358;
   text-decoration: none;
-}
-
-.button a {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
 }
 
 * {
@@ -168,7 +163,7 @@ nav ul li a:hover {
 }
 /* End nav */
 .banner {
-  padding-top: 65px;
+  padding-top: 55px;
   padding-bottom: 100px;
   color: #ffffff;
   width: 100%;
