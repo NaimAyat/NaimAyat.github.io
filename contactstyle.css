@@ -228,7 +228,7 @@ footer {
 .social i{
   font-size: 300%;
   margin: 1%;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   color: #ffffff;
 }
 
@@ -254,7 +254,7 @@ footer.second {
   background-color: #000000;
   max-height: 20px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 10px;
   font-size: 75%;
 }
