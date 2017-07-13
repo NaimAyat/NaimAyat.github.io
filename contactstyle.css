@@ -28,7 +28,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   /* To give a little highlight on active elements */
-  border-color: #C5B358;
+  border-color: #C5B358;to
 }
 
 textarea {
@@ -64,7 +64,7 @@ button {
 }
 
 .button a {
-  inline: block;
+  display: block;
 }
 
 * {
