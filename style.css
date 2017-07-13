@@ -99,8 +99,8 @@ nav ul li a:hover {
 }
 /* End nav */
 .banner {
-  padding-top: 110px;
-  padding-bottom: 155px;
+  padding-top: 170px;
+  padding-bottom: 225px;
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
@@ -217,8 +217,8 @@ footer.second {
     width: 100%;
   }
   .banner {
-    padding-top: 190px;
-    padding-bottom: 135px;
+    padding-top: 200px;
+    padding-bottom: 156px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
     color: #ffffff;
     width: 100%;
