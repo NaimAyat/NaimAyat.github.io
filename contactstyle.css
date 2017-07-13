@@ -319,7 +319,7 @@ and (max-device-width : 667px) {
   }
   .banner {
     padding-top: 120px;
-    padding-bottom: 76px;
+    padding-bottom: 77px;
     color: #ffffff;
     width: 100%;
   }
@@ -340,7 +340,7 @@ and (max-device-width : 667px) {
   }
   .button {
     font-size: 75%;
-    padding: 10px 46px 10px 20px;
+    padding: 10px 46px 10px 22px;
     background-color: rgba(250, 250, 250, .2);
   }
 }
