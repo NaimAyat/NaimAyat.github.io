@@ -344,3 +344,15 @@ and (max-device-width : 667px) {
     background-color: rgba(250, 250, 250, .2);
   }
 }
+@media screen /* Samsung Galaxy S6 / S7 */
+  and (device-width: 360px) 
+  and (device-height: 640px)
+  and (-webkit-min-device-pixel-ratio : 4) 
+  and (-webkit-device-pixel-ratio : 4)
+  and (orientation: portrait) {
+  .button {
+    font-size: 75%;
+    padding: 10px 50px 10px 20px;
+    background-color: rgba(250, 250, 250, .2);
+  }
+}
