@@ -27,7 +27,7 @@
 <!--END HEADER-->
   <section class ="banner">
     <div class="banner-inner">
-      <form action="https://formspree.io/NaimAyat@gmail.com" method="POST" onclick="window.open('submitted.html'); return true;">
+      <form action="https://formspree.io/NaimAyat@gmail.com" method="POST">
         <div>
           <label for="name">Name : &nbsp </label>
           <input type="text" id="name" name="user_name" placeholder="Firstname Lastname">
@@ -41,7 +41,7 @@
           <textarea id="msg" name="user_message"></textarea>
         </div>
         <div class="button">
-          <button type="submit" value="Send">Send</button>
+          <button type="submit" value="Send" onclick="window.open('submitted.html'); return true;">Send</button>
         </div>
       </form>
   </section>
