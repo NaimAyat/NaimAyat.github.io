@@ -160,7 +160,7 @@ nav ul li a:hover {
 /* End nav */
 .banner {
   padding-top: 55px;
-  padding-bottom: 104px;
+  padding-bottom: 106px;
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
@@ -201,7 +201,7 @@ footer {
 .social i{
   font-size: 300%;
   margin: 1%;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
   color: #ffffff;
 }
 .social i:hover{
