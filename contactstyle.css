@@ -63,7 +63,7 @@ button {
   text-decoration: none;
 }
 
-.button a {
+a {
   display: block;
 }
 
@@ -282,7 +282,7 @@ footer.second {
     width: 100%;
   }
   .banner {
-    padding-top: 140px;
+    padding-top: 130px;
     padding-bottom: 75px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
     color: #ffffff;
