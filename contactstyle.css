@@ -339,7 +339,7 @@ and (max-device-width : 667px) {
   }
   .button {
     font-size: 75%;
-    padding: 10px 47px 10px 20px;
+    padding: 10px 43px 10px 20px;
     background-color: rgba(250, 250, 250, .2);
   }
 }
