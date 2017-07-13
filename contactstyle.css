@@ -63,6 +63,10 @@ button {
   text-decoration: none;
 }
 
+.button a {
+  inline: block;
+}
+
 * {
   margin: 0;
   padding: 0;
