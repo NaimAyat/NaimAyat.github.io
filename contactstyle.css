@@ -319,7 +319,7 @@ and (max-device-width : 667px) {
   }
   .banner {
     padding-top: 225x;
-    padding-bottom: 140px;
+    padding-bottom: 10%;
     color: #ffffff;
     width: 100%;
   }
