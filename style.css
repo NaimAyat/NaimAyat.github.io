@@ -168,7 +168,9 @@ footer.second {
   padding-bottom: 10px;
   font-size: 75%;
 }
-
+#sent{
+  text-align: center;
+}
 /* Media */
 @media screen and (max-width: 1024px) {
   h2 {

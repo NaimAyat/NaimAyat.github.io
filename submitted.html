@@ -5,8 +5,8 @@
   <meta name="keywords" content="Naim,Ayat,NaimAyat,NaimAyat.me,Portfolio,Computer,Science,Programming,HTML,CSS,XML,XHTML,JavaScript,Cpp,C,Perl,Python,Java">
   <meta name="author" content="Naim Ayat">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Naim Ayat | Contact</title>
-  <link rel="stylesheet" type="text/css" href="contactstyle.css"/>
+  <title>Naim Ayat | Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
 </head>
@@ -19,31 +19,16 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="https://github.com/NaimAyat">PROJECTS</a></li>
-          <li><a href="contact.html" class="current">CONTACT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
 <!--END HEADER-->
   <section class ="banner">
-    <div class="banner-inner">
-      <form action="https://formspree.io/NaimAyat@gmail.com" method="POST" onclick="window.open('submitted.html'); return true;">
-        <div>
-          <label for="name">Name : &nbsp </label>
-          <input type="text" id="name" name="user_name" placeholder="Firstname Lastname">
-        </div>
-        <div>
-          <label for="mail">E-mail : &nbsp </label>
-          <input type="email" id="mail" name="_replyto" placeholder="you@example.com">
-        </div>
-        <div>
-          <label for="msg">Message : &nbsp </label>
-          <textarea id="msg" name="user_message"></textarea>
-        </div>
-        <div class="button">
-          <button type="submit" value="Send">Send</button>
-        </div>
-      </form>
+    <div class="banner-inner" id="sent">
+        Thank you, your message was sent.
+    </div>
   </section>
 <!--END BANNER-->
   <footer>
