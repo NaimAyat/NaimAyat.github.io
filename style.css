@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 
 .current {
-  border-bottom: 2px solid currentcolor;
+  color: #C5B358;
 }
 
 /* END NAV BAR */
