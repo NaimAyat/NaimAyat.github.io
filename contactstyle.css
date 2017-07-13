@@ -350,6 +350,9 @@ and (max-device-width : 667px) {
   and (-webkit-min-device-pixel-ratio : 4) 
   and (-webkit-device-pixel-ratio : 4)
   and (orientation: portrait) {
+  .banner {
+    padding-top: 125px;
+    padding-bottom: 82px;
   .button {
     font-size: 75%;
     padding: 10px 50px 10px 20px;
