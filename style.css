@@ -239,6 +239,9 @@ footer.second {
 @media only screen /* For iPhone 6 and 7 */
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+  #logo {
+    font-size: 150%;
+  }
   .banner-inner {
     color: #ffffff;
     max-width: 290px;
