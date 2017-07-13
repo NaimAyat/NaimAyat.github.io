@@ -240,7 +240,7 @@ footer.second {
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
   #logo {
-    font-size: 150%;
+    font-size: 110%;
   }
   .banner-inner {
     color: #ffffff;
