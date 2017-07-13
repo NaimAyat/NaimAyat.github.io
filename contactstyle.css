@@ -64,6 +64,10 @@ button {
   text-decoration: none;
 }
 
+#clickable {
+ cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
