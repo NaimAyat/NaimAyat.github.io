@@ -69,6 +69,7 @@ header {
 
 #logo:hover {
   color: #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 /* START NAV BAR */
@@ -109,7 +110,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #C5B358;
-  border-bottom: 2px solid #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 .current {
@@ -147,6 +148,7 @@ a:hover{
   color: #C5B358;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 /* START FOOTER */
@@ -176,6 +178,7 @@ footer {
 
 .social i:hover{
   color: #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 footer.second a:link {
@@ -189,6 +192,7 @@ footer.second a:visited{
 
 footer.second a:hover{
     color: #C5B358;
+    transition: color 0.3s ease-in-out;
 }
 
 footer.second {
@@ -243,6 +247,7 @@ footer.second {
   }
   nav:hover ul{
     display: block;
+    transition: color 0.3s ease-in-out;
   }
   nav li {
     text-align: center;

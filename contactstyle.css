@@ -58,6 +58,7 @@ textarea {
 .button:hover {
   background: rgba(197, 179, 88, .6);
   text-decoration: none;
+  transition: background 0.3s ease-in-out;
 }
 
 * {
@@ -131,6 +132,7 @@ header {
 
 #logo:hover {
   color: #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 nav {
@@ -148,6 +150,7 @@ nav {
 
 a:hover#menu-icon{
   border-radius: 4px 4px 0 0;
+  transition: color 0.3s ease-in-out;
 }
 
 ul {
@@ -169,7 +172,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #C5B358;
-  border-bottom: 2px solid #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 .current {
@@ -205,6 +208,7 @@ a:hover{
   color: #C5B358;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 /* START FOOTER */
@@ -234,6 +238,7 @@ footer {
 
 .social i:hover{
   color: #C5B358;
+  transition: color 0.3s ease-in-out;
 }
 
 footer.second a:link {
@@ -247,6 +252,7 @@ footer.second a:visited{
 
 footer.second a:hover{
     color: #C5B358;
+    transition: color 0.3s ease-in-out;
 }
 
 footer.second {
