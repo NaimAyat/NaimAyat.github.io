@@ -139,6 +139,10 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
+#error {
+  padding-left: 100px;
+}
+
 a:link {
   font-weight: bold;
   text-decoration: none;
