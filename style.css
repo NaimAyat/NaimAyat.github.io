@@ -164,6 +164,9 @@ nav ul li a:hover {
   -ms-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
+.project-text {
+  text-align: center;
+}
 
 #error {
   text-align: center;
