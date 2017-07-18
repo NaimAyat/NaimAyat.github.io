@@ -138,6 +138,7 @@ header {
 }
 
 #logo {
+  letter-spacing: 8px;
   color: #ffffff;
   text-decoration: none;
   font-family: 'Assistant', sans-serif;
@@ -187,6 +188,7 @@ ul {
 }
 
 nav ul li {
+  letter-spacing: 3px;
   font-family: 'Assistant', sans-serif;
   font-size: 150;
   display: inline-block;
@@ -286,6 +288,7 @@ footer {
 }
 
 footer.second a:link {
+    letter-spacing: 2px;
     color: #FFFFFF;
     font-weight: lighter;
     -webkit-transition: color 0.3s ease-in-out;
