@@ -149,20 +149,20 @@ nav ul li a:hover {
   max-width: 600px;
   text-align: justify;
   margin: 0 auto;
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .banner-inner:hover {
   background: rgba(0, 0, 0, .85);
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 #error {
