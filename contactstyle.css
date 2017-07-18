@@ -29,6 +29,7 @@ form div + div {
 }
 
 label {
+  letter-spacing: 1px;
   display: inline-block;
   width: 90px;
   text-align: right;
@@ -53,6 +54,7 @@ textarea {
 }
 
 .button {
+  letter-spacing: 2px;
   border:none;
   cursor: pointer;
   margin-left: 93px;
