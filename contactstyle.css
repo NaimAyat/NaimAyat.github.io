@@ -396,7 +396,7 @@ footer.second {
   }
   .button {
     font-size: 75%;
-    padding: 10px 46px 10px 20px;
+    padding: 10px 42px 10px 20px;
     background-color: rgba(250, 250, 250, .2);
   }
 }
@@ -435,7 +435,7 @@ and (max-device-width : 667px) {
   }
   .button {
     font-size: 75%;
-    padding: 10px 40px 10px 21px;
+    padding: 10px 38px 10px 21px;
     background-color: rgba(250, 250, 250, .2);
   }
 }
@@ -453,7 +453,7 @@ and (max-device-width : 667px) {
   }
   .button {
     font-size: 75%;
-    padding: 10px 43.5px 10px 20px;
+    padding: 10px 40.5px 10px 20px;
     background-color: rgba(250, 250, 250, .2);
   }
 }
