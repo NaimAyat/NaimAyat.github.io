@@ -120,8 +120,8 @@ nav ul li a:hover {
 /* END NAV BAR */
 
 .banner {
-  padding-top: 170px;
-  padding-bottom: 225px;
+  padding-top: 160px;
+  padding-bottom: 215px;
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
@@ -131,7 +131,9 @@ nav ul li a:hover {
 
 .banner-inner {
   background-color: rgba(0,0,0,0.6);
-  box-shadow: 0 0 20px 20px rgba(0,0,0,0.6);
+  padding: 1em;
+  border: 1px solid #ffffff;
+  border-radius: .5em;
   color: #ffffff;
   font-size: 107%;
   max-width: 600px;
@@ -258,8 +260,8 @@ footer.second {
     width: 100%;
   }
   .banner {
-    padding-top: 200px;
-    padding-bottom: 156px;
+    padding-top: 180px;
+    padding-bottom: 136px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
     color: #ffffff;
     width: 100%;
@@ -290,8 +292,8 @@ and (max-device-width : 667px) {
     margin: 0 auto;
   }
   .banner {
-    padding-top: 220x;
-    padding-bottom: 135px;
+    padding-top: 210x;
+    padding-bottom: 125px;
     color: #ffffff;
     width: 100%;
   }
