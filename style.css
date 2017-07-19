@@ -81,10 +81,10 @@ header {
 /* START NAV BAR */
 
 nav {
+  letter-spacing: 2px;
   z-index: 100000;
   float: right;
   padding: 25px 30px 0 0;
-  letter-spacing: 3px;
 }
 
 #menu-icon{
