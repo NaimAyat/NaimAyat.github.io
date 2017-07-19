@@ -66,15 +66,19 @@ header {
   float: left;
   height: 50px;
   padding: 0 0 0 30px;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #logo:hover {
   color: #C5B358;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -113,16 +117,20 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   color: #C5B358;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .current {
@@ -151,20 +159,20 @@ nav ul li a:hover {
   max-width: 600px;
   text-align: justify;
   margin: 0 auto;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  -ms-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .banner-inner:hover {
   background: rgba(0, 0, 0, .85);
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  -ms-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .project-text {
   text-align: center;
@@ -177,18 +185,22 @@ nav ul li a:hover {
 a:link {
   font-weight: bold;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 a:hover{
   color: #C5B358;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /* START FOOTER */
@@ -214,26 +226,30 @@ footer {
   margin: 1%;
   padding-bottom: 5px;
   color: #ffffff;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .social i:hover{
   color: #C5B358;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 footer.second a:link {
     color: #FFFFFF;
     font-weight: lighter;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 footer.second a:visited{
@@ -242,7 +258,11 @@ footer.second a:visited{
 
 footer.second a:hover{
     color: #C5B358;
-    transition: color 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+   -o-transition: 0.3s ease-in-out;
+   -ms-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
 }
 
 footer.second {
