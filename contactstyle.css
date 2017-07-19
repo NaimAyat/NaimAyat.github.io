@@ -161,6 +161,7 @@ header {
 }
 
 nav {
+  letter-spacing: 2px;
   z-index: 100000;
   float: right;
   padding: 25px 30px 0 0;
@@ -188,7 +189,6 @@ ul {
 }
 
 nav ul li {
-  letter-spacing: 2px;
   font-family: 'Assistant', sans-serif;
   font-size: 150;
   display: inline-block;
