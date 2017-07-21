@@ -6,6 +6,180 @@
   border: 0;
 }
 
+form {
+  background-color: rgba(0,0,0,0.6);
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ffffff;
+  border-radius: .5em;
+  padding-left: 10px;
+  -webkit-transition: background 0.3s ease-out;
+  -moz-transition: background 0.3s ease-out;
+  -o-transition: background 0.3s ease-out;
+  -ms-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+form:hover{
+  background: rgba(0, 0, 0, .85);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  padding: 5px;
+  font-size: 100%;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #C5B358;to
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  border:none;
+  cursor: pointer;
+  margin-left: 93px;
+  margin-top: 16px;
+  width: 70px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 59px 10px 20px;
+  text-decoration: none;
+  background-color: rgba(250, 250, 250, .25);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: rgba(197, 179, 88, .8);
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.dropdown {
+    font-size: 150;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .95);
+    border: 1px solid #000000;
+    min-width: 138px;
+    z-index: 1;
+    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+    -moz-animation: fadein 0.3s; /* Firefox */
+    -ms-animation: fadein 0.3s; /* Internet Explorer */
+    -o-animation: fadein 0.3s; /* Opera */
+    animation: fadein 0.3s;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
 body {
   background: #000000;
   color: #ffffff;
@@ -94,11 +268,11 @@ nav {
   background: url(img/nav.png) center;
 }
 
-a:hover#menu-icon{
+.dropdown, a:hover#menu-icon{
   border-radius: 4px 4px 0 0;
 }
 
-ul {
+.dropdown, ul {
   list-style-type: none;
 }
 
@@ -110,7 +284,7 @@ nav ul li {
   padding: 10px;
 }
 
-nav ul li a {
+.dropdown, nav ul li a {
   text-decoration: none;
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -120,7 +294,7 @@ nav ul li a {
   transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+.dropbtn:hover, nav ul li a:hover {
   color: #C5B358;
   transition: color 0.3s ease-in-out;
 }
@@ -132,8 +306,8 @@ nav ul li a:hover {
 /* END NAV BAR */
 
 .banner {
-  padding-top: 160px;
-  padding-bottom: 215px;
+  padding-top: 130px;
+  padding-bottom: 185px;
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
@@ -141,7 +315,17 @@ nav ul li a:hover {
   background-position: fix;
 }
 
-.banner-inner {
+.banner-contact {
+  padding-top: 80px;
+  padding-bottom: 115px;
+  color: #ffffff;
+  width: 100%;
+  background: url("img/home-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  background-position: fix;
+}
+
+.banner-index {
   background-color: rgba(0,0,0,0.6);
   padding: 1em;
   border: 1px solid #ffffff;
@@ -158,7 +342,15 @@ nav ul li a:hover {
   transition: background 0.3s ease-in-out;
 }
 
-.banner-inner:hover {
+.banner-inner {
+  color: #ffffff;
+  font-size: 107%;
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.banner-index:hover {
   background: rgba(0, 0, 0, .85);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -260,6 +452,22 @@ footer.second {
 
 /* General handheld devices & small browser windows */
 @media screen and (max-width: 1024px) {
+  form {
+    margin: 0 auto;
+    width: 260px;
+    padding: 1em;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    padding-left: 10px;
+  }
+  form div + div {
+    margin-top: 1em;
+  }
+  input, textarea {
+    font-size: 75%;
+    width: 160px;
+  }
+
   h2 {
     font size: 150%;
   }
@@ -296,22 +504,38 @@ footer.second {
     border: 1px solid #FFFFFF;
     width: 200px;
   }
+
   nav:hover ul{
     display: block;
+    background-color: rgba(0,0,0,0.9);
     transition: color 0.3s ease-in-out;
+    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+    -moz-animation: fadein 0.3s; /* Firefox */
+    -ms-animation: fadein 0.3s; /* Internet Explorer */
+    -o-animation: fadein 0.3s; /* Opera */
+    animation: fadein 0.3s;
   }
+
   nav li {
     text-align: center;
     width: 100%;
   }
+
   .banner {
-    padding-top: 180px;
-    padding-bottom: 136px;
+    padding-top: 140px;
+    padding-bottom: 105px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
     color: #ffffff;
     width: 100%;
   }
-  .banner-inner {
+  .banner-contact {
+    padding-top: 120px;
+    padding-bottom: 75px;
+    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    color: #ffffff;
+    width: 100%;
+  }
+  .banner-index {
     max-width: 270px;
     font-size: 95%;
     text-align: justify;
@@ -323,12 +547,24 @@ footer.second {
   footer.second {
     font-size: 50%;
   }
+  .button {
+    font-size: 75%;
+    padding: 10px 52px 10px 20px;
+    background-color: rgba(250, 250, 250, .2);
+  }
 }
 
 /* iPhone 6 and 7 */
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+  .banner-index {
+    color: #ffffff;
+    max-width: 290px;
+    font-size: 94%;
+    text-align: justify;
+    margin: 0 auto;
+  }
   .banner-inner {
     color: #ffffff;
     max-width: 290px;
@@ -341,5 +577,34 @@ and (max-device-width : 667px) {
     padding-bottom: 125px;
     color: #ffffff;
     width: 100%;
+  }
+  .banner-contact {
+    padding-top: 120px;
+    padding-bottom: 77px;
+    color: #ffffff;
+    width: 100%;
+  }
+  .button {
+    font-size: 75%;
+    padding: 10px 46px 10px 21px;
+    background-color: rgba(250, 250, 250, .2);
+  }
+}
+
+/* Samsung Galaxy S6 / S7 */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-min-device-pixel-ratio : 4)
+  and (-webkit-device-pixel-ratio : 4)
+  and (orientation: portrait) {
+  .banner-contact {
+    padding-top: 125px;
+    padding-bottom: 82px;
+  }
+  .button {
+    font-size: 75%;
+    padding: 10px 49.5px 10px 20px;
+    background-color: rgba(250, 250, 250, .2);
   }
 }
