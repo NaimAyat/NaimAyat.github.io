@@ -173,7 +173,7 @@ textarea {
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;
     cursor: pointer;
 }
