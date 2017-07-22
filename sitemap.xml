@@ -4,24 +4,29 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
   <loc>http://naimayat.me/</loc>
-  <lastmod>2017-07-18T20:35:22+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
 </url>
 <url>
   <loc>http://naimayat.me/index.html</loc>
-  <lastmod>2017-07-18T20:35:22+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
 </url>
 <url>
   <loc>http://naimayat.me/projects.html</loc>
-  <lastmod>2017-07-18T20:35:22+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
+</url>
+<url>
+  <loc>http://naimayat.me/perl.html</loc>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
+</url>
+<url>
+  <loc>http://naimayat.me/perl1.html</loc>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
 </url>
 <url>
   <loc>http://naimayat.me/contact.html</loc>
-  <lastmod>2017-07-18T20:35:22+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+  <lastmod>2017-07-22T02:18:49+00:00</lastmod>
 </url>
 </urlset>
