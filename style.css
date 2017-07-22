@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+#code {
+  font-family: 'Anonymous Pro', monospace;
+  background: rgba(255,255,255,0.6);
+  padding: 5px;
+  font-size: 80%;
 }
 
 form {
@@ -185,6 +193,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  letter-spacing: 1px;
+}
+
 h2 {
   font-family: 'Assistant', sans-serif;
   font-size: 250%;
@@ -334,7 +346,15 @@ nav ul li {
   background-size: cover;
   background-position: fix;
 }
-
+.banner-outer-perl-content {
+  padding-top: 25px;
+  padding-bottom: 60px;
+  color: #ffffff;
+  width: 100%;
+  background: url("img/home-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  background-position: fix;
+}
 .banner-contact {
   padding-top: 80px;
   padding-bottom: 115px;
@@ -364,6 +384,28 @@ nav ul li {
 
 .banner-perl {
   max-height: 70%;
+  width: 60%;
+  max-width: 1000px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0,0,0,0.6);
+  padding: 1em;
+  border: 1px solid #ffffff;
+  border-radius: .5em;
+  color: #ffffff;
+  font-size: 107%;
+  text-align: justify;
+  margin: 0 auto;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.banner-perl-content {
+  white-space: nowrap;
+  max-height: 350px;
   width: 60%;
   max-width: 1000px;
   overflow-y: scroll;
@@ -400,6 +442,14 @@ nav ul li {
 }
 
 .banner-perl:hover {
+  background: rgba(0, 0, 0, .85);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.banner-perl-content:hover {
   background: rgba(0, 0, 0, .85);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -585,6 +635,13 @@ footer.second {
     color: #ffffff;
     width: 100%;
   }
+  .banner-outer-perl-content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    color: #ffffff;
+    width: 100%;
+  }
   .banner-contact {
     padding-top: 120px;
     padding-bottom: 75px;
@@ -599,6 +656,15 @@ footer.second {
     margin: 0 auto;
   }
   .banner-perl {
+    max-height: 250px;
+    width: 70%;
+    max-width: 1000px;
+    overflow-y: scroll;
+    font-size: 95%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .banner-perl-content {
     max-height: 250px;
     width: 70%;
     max-width: 1000px;
@@ -638,6 +704,13 @@ and (max-device-width : 667px) {
     text-align: justify;
     margin: 0 auto;
   }
+  .banner-perl-content{
+    color: #ffffff;
+    max-width: 290px;
+    font-size: 94%;
+    text-align: justify;
+    margin: 0 auto;
+  }
   .banner-inner {
     color: #ffffff;
     max-width: 290px;
@@ -652,6 +725,12 @@ and (max-device-width : 667px) {
     width: 100%;
   }
   .banner-outer-perl {
+    padding-top: 150x;
+    padding-bottom: 60px;
+    color: #ffffff;
+    width: 100%;
+  }
+  .banner-outer-perl-content {
     padding-top: 150x;
     padding-bottom: 60px;
     color: #ffffff;

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Naim Ayat",
+    "url": "http://NaimAyat.me",
+    "sameAs": ["https://www.linkedin.com/in/NaimAyat", "https://www.github.com/NaimAyat", "https://www.twitter.com/NaimAyat", "https://www.instagram.com/NaimAyat", "https://www.facebook.com/NaimAyat"],
+    "logo": "http://NaimAyat.me/img/NaimAyat.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+1-707-495-0005",
+      "email": "Naim@NaimAyat.me",
+      "contactType": "sales"
+    }]
+  }
+  </script>
+
+  <script type='application/ld+json'>
+  {
+    "@context": "http://www.schema.org",
+    "@type": "person",
+    "name": "Naim Ayat",
+    "url": "http://naimayat.me",
+    "image": "https://pbs.twimg.com/profile_images/861748279838507008/74RQ3BcV_400x400.jpg",
+    "sameAs": ["https://www.linkedin.com/in/NaimAyat", "https://www.github.com/NaimAyat", "https://www.twitter.com/NaimAyat", "https://www.instagram.com/NaimAyat", "https://www.facebook.com/NaimAyat"],
+    "email": "Naim.Ayat@gmail.com",
+    "description": "Computer science student at UCLA.",
+    "alumniOf": ["University of California, Los Angeles", "Stanford University", "Sonoma State University"]
+  }
+  </script>
+
+  <script type='application/ld+json'>
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Naim Ayat",
+    "alternateName": "NaimAyat.me",
+    "url": "http://naimayat.me"
+  }
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="The website and professional portfolio of Naim Ayat.">
+  <meta name="keywords" content="Naim,Ayat,NaimAyat,NaimAyat.me,Portfolio,Computer,Science,Programming,HTML,CSS,XML,XHTML,JavaScript,Cpp,C,Perl,Python,Java">
+  <meta name="author" content="Naim Ayat">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naim Ayat | Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body vlink="white" link="white">
+  <header>
+    <div id="header-inner">
+      <a href="index.html" id="logo">NAIM AYAT</a>
+      <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><div class="dropdown">
+            <a href="#"><div class="dropbtn" id="current">PERL TUTORIALS</div></a>
+                <div class="dropdown-content">
+                  <a href="perl.html">Introduction</a>
+                  <a href="perl1.html" id="current">Part One</a>
+                </div>
+              </div>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!--END HEADER-->
+  <section class ="banner-outer-perl-content">
+    <div class="banner-perl-content">
+    <h1>IMPORTANT PRAGMAS</h1>
+    <br>
+    It's good practice to start every program with: <br>
+    <br> <div id="code">
+    &nbsp&nbsp&nbsp&nbsp #!/usr/bin/perl<br>
+    &nbsp&nbsp&nbsp&nbsp use warnings;<br>
+    &nbsp&nbsp&nbsp&nbsp use strict;<br></div>
+    <br>
+    <h1>SCALARS</h1>
+    <br>
+    To assign a scalar, use $:<br><br><div id="code">
+    &nbsp&nbsp&nbsp&nbsp $myScalar = 31;<br>
+    &nbsp&nbsp&nbsp&nbsp $myOtherScalar = "Hello";<br>
+    &nbsp&nbsp&nbsp&nbsp # Perl does not require the type of scalar to be stated.</div>
+    <br>
+    <h1>LISTS</h1>
+    <br>
+    Lists are automatically flattened.<br>
+    Ex: (1, 2, 3, 4) is the same as ((1, 2), (3, 4)).
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp   print("apple", "banana", "carrot") [2];<br>
+    &nbsp&nbsp&nbsp&nbsp   # prints "carrot"
+    <br><br>
+    &nbsp&nbsp&nbsp&nbsp   print("apple", "banana", "carrot") [-1];<br>
+    &nbsp&nbsp&nbsp&nbsp   # also prints "carrot"
+    <br><br>
+    &nbsp&nbsp&nbsp&nbsp   print("apple", "banana", "carrot") [1.9];<br>
+    &nbsp&nbsp&nbsp&nbsp   # prints "banana" because perl floors the number<br>
+    </div><br>
+    We can assign variables in a list with another list:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp ($varOne, $varTwo) = (1, 2);<br>
+    &nbsp&nbsp&nbsp&nbsp print("apple", "banana", "carrot") [$varOne, $varTwo];<br>
+    &nbsp&nbsp&nbsp&nbsp # prints "bananacarrot"
+    </div><br>
+    <h1>RANGES & "REVERSE"</h1><br>
+    Use ".." for ranges and "reverse" to flip a list:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp print (1..6);<br>
+    &nbsp&nbsp&nbsp&nbsp # prints 123456<br>
+    &nbsp&nbsp&nbsp&nbsp print(reverse("this","that"));<br>
+    &nbsp&nbsp&nbsp&nbsp # prints the list backwards, so "thatthis"<br>
+    </div>
+    <br>
+    <h1>ARRAYS</h1><br>
+    To assign an array, use @:<br><br><div id="code">
+    &nbsp&nbsp&nbsp&nbsp @myArray = (1, 2, 3);<br>
+    </div><br>
+    To get array length in a scalar:<br><br>
+    <div id="code">&nbsp&nbsp&nbsp&nbsp $scalar = @myArray;</div><br>
+    is now the same as<br><br>
+    <div id="code">&nbsp&nbsp&nbsp&nbsp $scalar = 3;</div><br>
+    To stringify an array:<br><br>
+    <div id="code">&nbsp&nbsp&nbsp&nbsp $scalar = "@myArray\n";</div><br>
+    is the same as<br><br>
+    <div id="code">&nbsp&nbsp&nbsp&nbsp $scalar = "1 2 3\n";</div><br>
+    Adding to an array:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array1 = (1, 2, 3);<br>
+    &nbsp&nbsp&nbsp&nbsp @array2 = (@array1, 4, 5, 6);<br>
+    &nbsp&nbsp&nbsp&nbsp print "array2\n";<br>
+    &nbsp&nbsp&nbsp&nbsp # prints "1 2 3 4 5 6"<br>
+    </div><br>
+    Another way to get array length:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp print scalar @array1;<br>
+    &nbsp&nbsp&nbsp&nbsp # prints 3<br>
+    </div><br>
+    To get an element in an array:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array = ("a", "b", "c");<br>
+    &nbsp&nbsp&nbsp&nbsp $element = $array[0];<br>
+    &nbsp&nbsp&nbsp&nbsp # we use "$array" instead of "@array" in the above statement because we<br>
+    &nbsp&nbsp&nbsp&nbsp # are getting a scalar, not a list<br>
+    </div><br>
+    To get an array slice:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @sales = (401, 512, 841, 926);<br>
+    &nbsp&nbsp&nbsp&nbsp print ("@sales[1..3]\n");<br>
+    &nbsp&nbsp&nbsp&nbsp # prints "512 841 926" plus newline<br>
+    &nbsp&nbsp&nbsp&nbsp print (@sales[1..3]);<br>
+    &nbsp&nbsp&nbsp&nbsp # prints "512841926"<br>
+    </div><br>
+    Swap two variables:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp $varOne, $varTwo) = ($varTwo, $varOne);<br>
+    </div><br>
+    Swap two array elements:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array[3,4] = @array[4,3];</br>
+    </div><br>
+    <h1>Special $_ variable:</h1><br>
+    When processing a "for" loop, $_ becomes each element of the list or array.<br>
+    For example: <br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp my @array = (1, 2, 3);<br>
+    &nbsp&nbsp&nbsp&nbsp for (@array) {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $_ *= 10;<br>
+    &nbsp&nbsp&nbsp&nbsp }<br>
+    &nbsp&nbsp&nbsp&nbsp print "@array\n"<br>
+    &nbsp&nbsp&nbsp&nbsp # will print "10, 20, 30" plus newline<br>
+    </div><br>
+    To get the position of last element in an array, use $#array:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp my @array = qw(alpha bravo charlie delta);<br>
+    &nbsp&nbsp&nbsp&nbsp print (scalar @array, "\n");<br>
+    &nbsp&nbsp&nbsp&nbsp print ($#array, "\n");<br>
+    &nbsp&nbsp&nbsp&nbsp # will print 4 then 3, since 4 is length and 3 is pos of last element<br>
+    </div><br>
+    So to do a for loop from 0 to last element, do:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp for (0..$#array);<br>
+    </div><br>
+    Pop/push with arrays:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp $poppedElement = pop @array;<br>
+    &nbsp&nbsp&nbsp&nbsp # pops the last element off of @array and puts it in $poppedElement<br>
+    &nbsp&nbsp&nbsp&nbsp push @array, $poppedElement;<br>
+    &nbsp&nbsp&nbsp&nbsp # pushes the element back onto the end of the  array<br>
+    </div><br>
+    Shift/unshift with arrays:<br>
+    It's the same as pop/push, but for the front of an array.<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp $shiftedElement = shift @array;<br>
+    &nbsp&nbsp&nbsp&nbsp # removes the first element of the array and puts it in $shiftedElement<br>
+    &nbsp&nbsp&nbsp&nbsp unshift @array, $shiftedElement;<br>
+    &nbsp&nbsp&nbsp&nbsp # puts the element back at the front of the array<br>
+    </div><br>
+    Sort: operator that takes a list and puts it in ASCII (string) order.<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp my @array = (4, 1, 3, 2);<br>
+    &nbsp&nbsp&nbsp&nbsp my @sortedArray = sort @array;<br>
+    </div><br>
+    To sort in numeric order:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp my @array = (3, 11, 1, 34, 4);<br>
+    &nbsp&nbsp&nbsp&nbsp my @ASCIISortedArray = sort {$a cmp $b};	# 1, 11, 3, 34, 4<br>
+    &nbsp&nbsp&nbsp&nbsp my @numericallySortedArray = sort {$a <=> $b};  # 1, 3, 4, 11, 34<br>
+    </div><br>
+    <h1>HASHES</h1><br>
+    To declare a hash, use % in one of two ways:<br><br>
+    1. As a list of pairs:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp %newHash=(<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "Naim", "Ayat",<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "John", "Doe",<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "Jane", "Doe",<br>
+    &nbsp&nbsp&nbsp&nbsp );<br>
+    </div><br>
+    2. As a list of pairs denoted by =>. <br><br>
+    This is the same as a comma, but everything on the left is automatically <br>
+    treated as a double-quoted string.<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp %newHash=(<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Naim => "Ayat",<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp John => "Doe",<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Jane => "Doe",<br>
+    &nbsp&nbsp&nbsp&nbsp );
+    </div><br>
+      Note: scalars on the left are called "hash keys",<br>
+      scalars on the right are called values. Hash keys must be unique.<br>
+    <br>
+    Convert from array to hash:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array = ("Naim", "Ayat", "John", "Doe", "Jane", "Doe");<br>
+    &nbsp&nbsp&nbsp&nbsp %newHash = @array;<br>
+    </div><br>
+    Convert from hash to array:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array = %newHash;<br>
+    </div><br>
+    Note: hashes are unordered, apart from the fact that values will always follow <br>
+    their keys. Be careful when converting from a hash to an array.<br><br>
+
+    To reverse the positions of hash keys and values:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp @array = %newHash;<br>
+    &nbsp&nbsp&nbsp&nbsp %reversedHash = reverse @array;<br>
+    </div><br>
+    Note: if two values were the same, converting them to keys means that one <br>
+    will be lost.
+    <br><br>
+    To add an entry to a hash:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp $newHash{Naim} = "Ayat";<br>
+    &nbsp&nbsp&nbsp&nbsp print "Naim's last name is $newHash{Naim}\n";<br>
+    </div><br>
+    To delete a hash entry:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp delete ($newHash{George});<br>
+    </div><br>
+    To loop through a hash, use the keys function:<br><br>
+    <div id="code">
+    &nbsp&nbsp&nbsp&nbsp for (keys %newHash){ <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp print "$_'s last name is $newHash{$_}\n"; <br>
+    &nbsp&nbsp&nbsp&nbsp } <br>
+    </div><br>
+    Congratulations, you've learned all of Perl's data types.<br><br>
+    The next part of this tutorial is coming soon. Until then, you can view <a href="https://github.com/NaimAyat/Perl_Tutorials" target="_blank">the entire series (unformatted) on GitHub</a>.
+  </section>
+<!--END BANNER-->
+  <footer>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/NaimAyat" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <li><a href="https://www.github.com/NaimAyat" target="_blank"><i class="fa fa-github"></i></a></li>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <li><a href="https://www.twitter.com/NaimAyat" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <li><a href="https://www.instagram.com/NaimAyat" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <li><a href="https://www.facebook.com/NaimAyat" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    </ul>
+  </footer>
+<!--END SOCIAL FOOTER-->
+  <footer class="second">
+      <a href="https://github.com/NaimAyat/NaimAyat.github.io" id= "open-source" target="_blank">&copy 2017 NAIM AYAT</a>
+  </footer>
+<!--END SECOND FOOTER-->
+</body>
+</html>
