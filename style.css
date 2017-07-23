@@ -406,7 +406,7 @@ nav ul li {
 .banner-perl-content {
   white-space: nowrap;
   max-height: 350px;
-  width: 60%;
+  width: 70%;
   max-width: 1000px;
   overflow-y: scroll;
   background-color: rgba(0,0,0,0.6);
@@ -636,8 +636,8 @@ footer.second {
     width: 100%;
   }
   .banner-outer-perl-content {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 30px;
     background: url("img/home-bg.png") no-repeat 45% 13% fixed;
     color: #ffffff;
     width: 100%;
@@ -665,11 +665,11 @@ footer.second {
     margin: 0 auto;
   }
   .banner-perl-content {
-    max-height: 250px;
-    width: 70%;
+    max-height: 300px;
+    width: 90%;
     max-width: 1000px;
     overflow-y: scroll;
-    font-size: 95%;
+    font-size: 70%;
     text-align: justify;
     margin: 0 auto;
   }
@@ -707,7 +707,6 @@ and (max-device-width : 667px) {
   .banner-perl-content{
     color: #ffffff;
     max-width: 290px;
-    font-size: 94%;
     text-align: justify;
     margin: 0 auto;
   }
@@ -721,18 +720,6 @@ and (max-device-width : 667px) {
   .banner {
     padding-top: 220x;
     padding-bottom: 130px;
-    color: #ffffff;
-    width: 100%;
-  }
-  .banner-outer-perl {
-    padding-top: 150x;
-    padding-bottom: 60px;
-    color: #ffffff;
-    width: 100%;
-  }
-  .banner-outer-perl-content {
-    padding-top: 150x;
-    padding-bottom: 60px;
     color: #ffffff;
     width: 100%;
   }
