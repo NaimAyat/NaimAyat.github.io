@@ -7,6 +7,18 @@
   border: 0;
 }
 
+.cameltxt {
+  text-align: center;
+  white-space: nowrap;
+}
+.camel {
+  padding-top: 10px;
+  display:block;
+  filter: invert(100%);
+  max-width: 30px;
+  margin: 0 auto;
+}
+
 #code {
   font-family: 'Anonymous Pro', monospace;
   background: rgba(255,255,255,0.6);
