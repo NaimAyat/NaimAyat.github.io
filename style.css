@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
+
+td {
+   border: 1px solid #ffffff;
+   padding: 5px;
+   font-size: 90%;
+}
+
+tr {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+th {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  font-size: 120%;
+  text-align: center;
+  color: #ffffff; /* Header color does not transition */
+}
+
+tr:hover {
+  color: #C5B358;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;

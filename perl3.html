@@ -28,15 +28,15 @@
     "@type": "WebPage",
     "@id": "http://NaimAyat.me/perl2.html"
   },
-  "headline": "Perl Tutorial Part 2: Logical Operators & Loops",
+  "headline": "Perl Tutorial Part 3: Regular Expressions",
   "image": {
     "@type": "ImageObject",
     "url": "http://naimayat.me/favicons/android-chrome-96x96.png",
     "height": 60,
     "width": 700
   },
-  "datePublished": "2017-07-30T20:00:00+08:00",
-  "dateModified": "2015-07-31T00:00:00+08:00",
+  "datePublished": "2017-08-03T20:00:00+08:00",
+  "dateModified": "2015-08-04T00:00:00+08:00",
   "author": {
     "@type": "Person",
     "name": "Naim Ayat"
@@ -51,7 +51,7 @@
       "height": 60
     }
   },
-  "description": "Part two of Naim Ayat's tutorial for the Perl programming language."
+  "description": "Part three of Naim Ayat's tutorial for the Perl programming language."
 }
 </script>
 
@@ -102,19 +102,19 @@
   <meta name="author" content="Naim Ayat">
 
   <meta property="og:image" content="http://naimayat.me/favicons/og_small.png">
-  <meta property='og:title' content="Naim Ayat | Perl Tutorial 2">
+  <meta property='og:title' content="Naim Ayat | Perl Tutorial 3">
   <meta property='og:description' content="Perl programming tutorials by Naim Ayat.">
   <meta property='og:url' content="http://naimayat.me/perl1">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@NaimAyat">
   <meta name="twitter:creator" content="@NaimAyat">
-  <meta name="twitter:title" content="Naim Ayat | Perl Tutorial 2">
+  <meta name="twitter:title" content="Naim Ayat | Perl Tutorial 3">
   <meta name="twitter:description" content="Perl programming tutorials by Naim Ayat.">
   <meta name="twitter:image" content="http://naimayat.me/favicons/og.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Naim Ayat | Perl Tutorial 2</title>
+  <title>Naim Ayat | Perl Tutorial 3</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
@@ -139,8 +139,8 @@
                 <div class="dropdown-content">
                   <a href="/perl.html">Introduction</a>
                   <a href="/perl1.html">Part One</a>
-                  <a href="/perl2.html" id="current">Part Two</a>
-                  <a href="/perl3.html">Part Three</a>
+                  <a href="/perl2.html">Part Two</a>
+                  <a href="/perl3.html" id="current">Part Three</a>
                 </div>
               </div>
           <li><a href="/contact.html">CONTACT</a></li>
@@ -151,124 +151,224 @@
 <!--END HEADER-->
   <section class ="banner-outer-perl-content">
     <div class="banner-perl-content">
-    <h2>Perl Tutorial Part 2:<br>Logical Operators & Loops</h2><br>
-    <h1>"EXISTS" & "DEFINED"</h1>
+    <h2>Perl Tutorial Part 3:<br>Regular Expressions</h2><br>
+    <h1>REGEX OPERATORS</h1>
     <br>
-    To check if something exists in a data set, <br>
-    simply use the "exists" keyword: <br>
-    <br> <div id="code">
-    &nbsp&nbsp if (not exists $rates{$to}) {<br>
-    &nbsp&nbsp&nbsp&nbsp die "That input is invalid!\n"; }<br></div>
+    <table>
+      <tr>
+        <th>OPERATOR</th>
+        <th>MEANING</th>
+      </tr>
+      <tr>
+        <td>=~</td>
+        <td>Contains.</td>
+      </tr>
+      <tr>
+        <td>!~</td>
+        <td>Does not contain.</td>
+      </tr>
+      <tr>
+        <td>/some string/</td>
+        <td>Search for the string inside the slashes.</td>
+      </tr>
+      <tr>
+        <td>/some string/i</td>
+        <td>Case insensitive string search.</td>
+      </tr>
+      <tr>
+        <td>\</td>
+        <td>Escapes special characters (.*?+[](){}^$|\).</td>
+      </tr>
+      <tr>
+        <td>\Qsome string\E</td>
+        <td>Escape sequence contained within \Q and \E.</td>
+      </tr>
+      <tr>
+        <td>^</td>
+        <td>Match beginning of string or line.</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td>Match end of string or line.</td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td>Match any character.</td>
+      </tr>
+      <tr>
+        <td>|</td>
+        <td>"Or". Yes|Maybe matches Yes or Maybe.</td>
+      </tr>
+      <tr>
+        <td>?</td>
+        <td>Preceding element occurs either 0 or 1 times.</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>Preceding element occurs 1 or more times.</td>
+      </tr>
+      <tr>
+        <td>{x,y}</td>
+        <td>Preceding element occcurs between x and y times.</td>
+      </tr>
+      <tr>
+        <td>{,y}</td>
+        <td>Preceding element occurs at most y times.</td>
+      </tr>
+      <tr>
+        <td>{x,}</td>
+        <td>Preceding element occurs at least x times.</td>
+      </tr>
+      <tr>
+        <td>{x}</td>
+        <td>Preceding element occurs exactly x times.</td>
+      </tr>
+    </table>
     <br>
-    Check if a variable is defined with the "defined" keyword: <br>
-    <br> <div id="code">
-    &nbsp&nbsp if (defined $a) { # do something }<br></div>
+    <h1>WILDCARD OPERATORS</h1>
     <br>
-    <h1>BOOLEAN LOGIC</h1>
+    <table>
+      <tr>
+        <th>OPERATOR</th>
+        <th>MEANING</th>
+      </tr>
+      <tr>
+        <td>^</td>
+        <td>Negates a character class. <br>Ex: [^abc] is not a, b, or c.</td>
+      </tr>
+      <tr>
+        <td>[]</td>
+        <td>Range selector.</td>
+      </tr>
+      <tr>
+        <td>\d or [0-9]</td>
+        <td>Represents digits 0-9.</td>
+      </tr>
+      <tr>
+        <td>\w or [0-9/a-Za-z_]</td>
+        <td>Represents any number or letter.</td>
+      </tr>
+      <tr>
+        <td>\s [ \t\n\r]</td>
+        <td>A whitespace character (space, tab, newline, return).</td>
+      </tr>
+      <tr>
+        <td>\D or [^0-9]</td>
+        <td>Not a digit.</td>
+      </tr>
+      <tr>
+        <td>\W or [^0-9A-Za-z_]</td>
+        <td>Not a digit nor letter.</td>
+      </tr>
+      <tr>
+        <td>\S or [^ \t\n\r]</td>
+        <td>Not whitespace.</td>
+      </tr>
+      <tr>
+        <td>\b</td>
+        <td>Match a boundary<br>(whitespace or the beginning/end of a line).</td>
+      </tr>
+    </table>
     <br>
-    <ul>
-      <li>&nbsp&nbsp◦&nbsp&nbsp An empty string, "", is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp The number zero and the string "0" are both false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp 0.0, or any variation of 0 other than simply 0, is true.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp An empty list, (), is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp The undefined value is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp Everything else is true.</li>
-    </ul> <br>
-    <h1>STRING COMPARISON</h1>
+    <h1>POSIX & UNICODE CLASSES</h1>
+    <br>
+    <table>
+      <tr>
+        <th>CLASS</th>
+        <th>MEANING</th>
+      </tr>
+      <tr>
+        <td>[[:alpha:]] or [a-zA-Z]</td>
+        <td>An alphabetic character.</td>
+      </tr>
+      <tr>
+        <td>[[:alnum:]] or [0-9A-Za-z]</td>
+        <td>An alphanumeric character.</td>
+      </tr>
+      <tr>
+        <td>[[:digit:]] or \d</td>
+        <td>A digit, 0-9.</td>
+      </tr>
+      <tr>
+        <td>[[:lower:]] or [a-z]</td>
+        <td>A lowercase letter.</td>
+      </tr>
+      <tr>
+        <td>[[:upper:]] or [A-Z]</td>
+        <td>An uppercase letter.</td>
+      </tr>
+      <tr>
+        <td>[[:punct:]]</td>
+        <td>A punctuation character:<br>[!"#$%&'()*+,-/:;<=>?@\[\\\]^_`{|}~].</td>
+      </tr>
+    </table>
+    <br>
+    <h1>LOOPING THROUGH FILES</h1>
     <br>
     <div id="code">
-    <ul>
-      <li>&nbsp&nbsp ($a gt $b) # $a sorts alphabetically after $b</li>
-      <li>&nbsp&nbsp ($a le $b) # $a sorts alphabetically before $b</li>
-      <li>&nbsp&nbsp ($a eq $b) # $a is the same as $b</li>
-      <li>&nbsp&nbsp ($a ne $b) # $a is not the same as $b</li>
-    </ul> </div> <br>
-    <h1>Using "UNLESS"</h1><br>
-    Perl features an "unless" command:<br><br><div id="code">
-    &nbsp&nbsp unless (exists $rates($to)) {<br>
-    &nbsp&nbsp&nbsp&nbsp die "That input is invalid!\n";}<br>
+    &nbsp&nbsp while (<>) {statment}
     </div><br>
-    <h1>"ELSE" & "ELSEIF"</h1>
+    Opens file specified in command line, loops through it and feeds each <br>
+    line to the special variable $_.
     <br>
-    <div id="code">
-    &nbsp&nbsp if (condition){<br>
-    &nbsp&nbsp&nbsp&nbsp # action<br>
-    &nbsp&nbsp } elseif (condition2) {<br>
-    &nbsp&nbsp&nbsp&nbsp # action 2<br>
-    &nbsp&nbsp } else {<br>
-    &nbsp&nbsp&nbsp&nbsp # everything else failed, action 3<br>
-    &nbsp&nbsp }<br>
-    </div><br>
-    <h1>"WHILE" LOOPS</h1>
     <br>
+    <h1>BACKREFERENCES</h1>
+    <br>
+    Perl has special variables $1, $2, $3... that hold the elements	that <br>
+    are matched by a regular expression.
+    <br><br>
+    <h1>SUBSTITUTION</h1>
+    <br>
+    Use the "s///" operator: <br><br>
     <div id="code">
-    &nbsp&nbsp while (condition) {action}; <br>
-    &nbsp&nbsp # OR<br>
-    &nbsp&nbsp {action} while (condition);<br>
+    &nbsp&nbsp s/matchThis/replaceWithThis/
     </div><br>
-    Example:<br><br>
+    You can use the "g" modifier to make global substitutions: "s///g".
+    <br><br>
+    <h1>MODIFIERS</h1>
+    <br>
+    <table>
+      <tr>
+        <th>MODIFIER</th>
+        <th>MEANING</th>
+      </tr>
+      <tr>
+        <td>/i</td>
+        <td>Case insensitive.</td>
+      </tr>
+      <tr>
+        <td>/g</td>
+        <td>Globally substitute or match multiple items.</td>
+      </tr>
+      <tr>
+        <td>/m</td>
+        <td>Treat a string as multiple lines.</td>
+      </tr>
+      <tr>
+        <td>/s</td>
+        <td>Treat a string as a single line.</td>
+      </tr>
+      <tr>
+        <td>/x</td>
+        <td>Allow the use of whitespace and comments inside a match.</td>
+      </tr>
+    </table>
+    <br>
+    <h1>SPLIT</h1>
+    <br>
+    The split command  breaks its input into a set of substrings. <br>
+	  If no delimeter is	specified, whitespace is used. <br><br>
     <div id="code">
-    &nbsp&nbsp my $count = 5; <br>
-    &nbsp&nbsp print "Counting down: "; <br>
-    &nbsp&nbsp while ($count > 0) {<br>
-    &nbsp&nbsp&nbsp&nbsp print "$count ";<br>
-    &nbsp&nbsp&nbsp&nbsp count--; <br>
-    &nbsp&nbsp } # prints "5 4 3 2 1 "<br>
+    &nbsp&nbsp split delimeter, elementToSplit;
     </div><br>
-    "Do-while" loops are also valid à la C or C++.<br>
-    Note: the action will execute once before the condition is evaluated.<br><br>
+    <h1>JOIN</h1>
+    <br>
+    Opposite of split; rejoins substrings. <br><br>
     <div id="code">
-    &nbsp&nbsp do {action} while (condition) <br></div><br>
-    <h1>"UNTIL" LOOPS</h1><br>
-    <div id="code">
-    &nbsp&nbsp until (condition) {statement};<br>
+    &nbsp&nbsp join delimeter, elementToJoin;
     </div><br>
-    Example: <br><br>
-    <div id="code">
-    &nbsp&nbsp my $count = 5; <br>
-    &nbsp&nbsp until ($count-- == 0) { <br>
-    &nbsp&nbsp&nbsp&nbsp print "$count ";<br>
-    &nbsp&nbsp } # prints "5 4 3 2 1 "<br>
-    </div><br>
-    <h1>BREAKING OUT OF LOOPS</h1><br>
-    To break out of a loop, use the keyword "last". For example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("a","b","c","stop","d");<br>
-    &nbsp&nbsp for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp if ($_ eq "stop") {last;}<br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp } # prints "a b c "<br>
-    </div><br>
-    <h1>SKIP & REDO ITERATIONS OF LOOPS</h1><br>
-    To skip an iteration of a loop, use the "next" keyword. Example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("a","b","c","skip","d");<br>
-    &nbsp&nbsp for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp if ($_ eq "skip") {next;}<br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp } # prints "a b c d "<br>
-    </div><br>
-    Similarly, the "redo" keyword repeats a loop iteration.<br><br>
-    <h1>LOOP LABELS</h1><br>
-    Loops can be labeled, ie. given a name before the "for", <br>
-    "while", or "until".<br><br>
-    The convention is that these labels are formed with all<br>
-    uppercase letters. For example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("keep", "going", "stop", "Naim", "Ayat");<br>
-    &nbsp&nbsp OUTERLOOP: for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp&nbsp&nbsp last OUTERLOOP if ($_ eq "stop");<br>
-    &nbsp&nbsp } # prints "keep going stop "<br>
-    </div><br>
-    Note that you can skip to a line by using
-    <div id="code">
-    goto LABEL:
-    </div>
-    but this is considered bad practice in any language.<br><br>
-    You've now learned basic logic and loops in Perl.<br><br>
     The next part of this tutorial will be published here soon. <br>Until then, you can view <a href="https://github.com/NaimAyat/Perl_Tutorials" target="_blank">the entire series on GitHub</a>.
-  </section>
+    </section>
 <!--END BANNER-->
   <footer>
     <ul class="social">
