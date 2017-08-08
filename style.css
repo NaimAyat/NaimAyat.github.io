@@ -3,9 +3,13 @@
 
 
 td {
+   width:70%;
+   margin-left:20%;
+   margin-right:20%;
    border: 1px solid #ffffff;
    padding: 5px;
    font-size: 90%;
+   text-align: left;
 }
 
 tr {
@@ -17,6 +21,7 @@ tr {
 }
 
 th {
+  align
   padding: 10px;
   border: 1px solid #ffffff;
   font-size: 120%;
@@ -435,29 +440,10 @@ nav ul li {
   transition: background 0.3s ease-in-out;
 }
 
-.banner-perl {
-  max-height: 70%;
-  width: 60%;
-  max-width: 1000px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: rgba(0,0,0,0.6);
-  padding: 1em;
-  border: 1px solid #ffffff;
-  border-radius: .5em;
-  color: #ffffff;
-  font-size: 107%;
-  text-align: justify;
-  margin: 0 auto;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  -ms-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-
 .banner-perl-content {
-  white-space: nowrap;
+  width:70%;
+  margin-left:15%;
+  margin-right:15%;
   max-height: 350px;
   width: 70%;
   max-width: 1000px;
@@ -468,8 +454,7 @@ nav ul li {
   border-radius: .5em;
   color: #ffffff;
   font-size: 107%;
-  text-align: justify;
-  margin: 0 auto;
+  text-align: left;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
@@ -494,14 +479,6 @@ nav ul li {
   transition: background 0.3s ease-in-out;
 }
 
-.banner-perl:hover {
-  background: rgba(0, 0, 0, .85);
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  -ms-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
 .banner-perl-content:hover {
   background: rgba(0, 0, 0, .85);
   -webkit-transition: background 0.3s ease-in-out;
@@ -708,22 +685,12 @@ footer.second {
     text-align: justify;
     margin: 0 auto;
   }
-  .banner-perl {
-    max-height: 250px;
-    width: 70%;
-    max-width: 1000px;
-    overflow-y: scroll;
-    font-size: 95%;
-    text-align: justify;
-    margin: 0 auto;
-  }
   .banner-perl-content {
     max-height: 300px;
     width: 90%;
     max-width: 1000px;
     overflow-y: scroll;
     font-size: 70%;
-    text-align: justify;
     margin: 0 auto;
   }
   .social {
@@ -744,13 +711,6 @@ footer.second {
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
   .banner-index {
-    color: #ffffff;
-    max-width: 290px;
-    font-size: 94%;
-    text-align: justify;
-    margin: 0 auto;
-  }
-  .banner-perl {
     color: #ffffff;
     max-width: 290px;
     font-size: 94%;
