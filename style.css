@@ -460,6 +460,7 @@ nav ul li {
   -o-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 .banner-inner {
