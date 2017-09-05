@@ -28,15 +28,15 @@
     "@type": "WebPage",
     "@id": "http://NaimAyat.me/perl2.html"
   },
-  "headline": "Perl Tutorial Part 2: Logical Operators & Loops",
+  "headline": "Perl Tutorial Part 3: Regular Expressions",
   "image": {
     "@type": "ImageObject",
     "url": "http://naimayat.me/favicons/android-chrome-96x96.png",
     "height": 60,
     "width": 700
   },
-  "datePublished": "2017-07-30T20:00:00+08:00",
-  "dateModified": "2015-07-31T00:00:00+08:00",
+  "datePublished": "2017-08-03T20:00:00+08:00",
+  "dateModified": "2015-08-04T00:00:00+08:00",
   "author": {
     "@type": "Person",
     "name": "Naim Ayat"
@@ -51,7 +51,7 @@
       "height": 60
     }
   },
-  "description": "Part two of Naim Ayat's tutorial for the Perl programming language."
+  "description": "Part three of Naim Ayat's tutorial for the Perl programming language."
 }
 </script>
 
@@ -102,19 +102,19 @@
   <meta name="author" content="Naim Ayat">
 
   <meta property="og:image" content="http://naimayat.me/favicons/og_small.png">
-  <meta property='og:title' content="Naim Ayat | Perl Tutorial 2">
+  <meta property='og:title' content="Naim Ayat | Perl Tutorial 4">
   <meta property='og:description' content="Perl programming tutorials by Naim Ayat.">
   <meta property='og:url' content="http://naimayat.me/perl1">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@NaimAyat">
   <meta name="twitter:creator" content="@NaimAyat">
-  <meta name="twitter:title" content="Naim Ayat | Perl Tutorial 2">
+  <meta name="twitter:title" content="Naim Ayat | Perl Tutorial 4">
   <meta name="twitter:description" content="Perl programming tutorials by Naim Ayat.">
   <meta name="twitter:image" content="http://naimayat.me/favicons/og.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Naim Ayat | Perl Tutorial 2</title>
+  <title>Naim Ayat | Perl Tutorial 4</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
@@ -139,9 +139,9 @@
                 <div class="dropdown-content">
                   <a href="/perl.html">INTRO</a>
                   <a href="/perl1.html">PART 1</a>
-                  <a href="/perl2.html" id="current">PART 2</a>
+                  <a href="/perl2.html">PART 2</a>
                   <a href="/perl3.html">PART 3</a>
-                  <a href="/perl4.html">PART 4</a>
+                  <a href="/perl4.html" id="current">PART 4</a>
                 </div>
               </div>
           <li><a href="/contact.html">CONTACT</a></li>
@@ -152,120 +152,147 @@
 <!--END HEADER-->
   <section class ="banner-outer-perl-content">
     <div class="banner-perl-content">
-    <h2>Perl Tutorial Part 2:<br>Logical Operators & Loops</h2><br>
-    <h1>"EXISTS" & "DEFINED"</h1>
+    <h2>Perl Tutorial Part 4:<br>Accessing Files</h2><br>
+    <h1>READING FILES</h1>
     <br>
-    To check if something exists in a data set, simply use the "exists" keyword:
-    <br><br> <div id="code">
-    &nbsp&nbsp if (not exists $rates{$to}) {<br>
-    &nbsp&nbsp&nbsp&nbsp die "That input is invalid!\n"; }<br></div>
+    To open a filehandle for reading:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp open FH, $filename or die $!;
+    </div><br>
+    This opens the file specified in the command line, loops through it and feeds each
+    line to the special variable $_.
+    <br><br>
+    We can also open a filehandle with a string literal:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp open FH, 'file.txt' or die $!;
+    </div><br>
+    To read lines from a file, just use &ltFH&gt as if it were &ltSTDIN&gt. Like
+    &ltSTDIN&gt reads one line of input, &ltFH&gt reads one line from a filehandle.
+    <br><br>
+    ARGV reads the names of files from the command line and opens them all.
+    If there aren't any, it reads from STDIN.
+    <br><br>
+    @ARGV contains any text after the program's name on the command line.
+    &ltARGV&gt takes each file in turn. It can be abbreviated to just &lt&gt.
+    Similarly, $ARGV holds the name of the file currently being read.
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp while (&ltFH&gt);
+    </div><br>
+    The above statement will read in every line at once. This is very memory-intensive and should be
+    avoided. Here's an example of how to efficiently store every line in an array:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp open INPUT, "somefile.txt" or die $!;<br>
+    &nbsp&nbsp my @data;<br>
+    &nbsp&nbsp @data = &ltINPUT&gt ; <br>
+    </div><br>
+    The diamond	operator &ltFILEHANDLE&gt reads in a line from the file.
+    We	control	the definition of a	line by	altering the record separator, $/.
+    <br><br>
+    <h1>WRITING TO FILES</h1>
     <br>
-    Check if a variable is defined with the "defined" keyword: <br>
-    <br> <div id="code">
-    &nbsp&nbsp if (defined $a) { # do something }<br></div>
+    To open a file for writing (and overwrite it):
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp open FH, "&gt $filename" or die $!;
+    </div><br>
+    To open a file for writing (and append to it instead of overwriting):
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp open FH, "&gt&gt $filename" or die $!;
+    </div><br>
+    When we want to	write to the file, we use a slightly modified print:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp print FH "something";
+    </div><br>
+    To change the default print to print FILEHANDLE:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp select FILEHANDLE;
+    </div><br>
+    To turn off buffering:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp $| = 1;
+    </div><br>
+    Coversely, to turn on buffering (default):
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp $| = 0;
+    </div><br>
+    <h1>FILE TESTS</h1>
     <br>
-    <h1>BOOLEAN LOGIC</h1>
+    <table>
+      <tr>
+        <th>FLAG</th>
+        <th>MEANING</th>
+      </tr>
+      <tr>
+        <td>-e</td>
+        <td>True if the file exists.</td>
+      </tr>
+      <tr>
+        <td>-f</td>
+        <td>True if the file is a plain file – not a directory.</td>
+      </tr>
+      <tr>
+        <td>-d</td>
+        <td>True if the file is a directory.</td>
+      </tr>
+      <tr>
+        <td>-z</td>
+        <td>True if the file has zero size.</td>
+      </tr>
+      <tr>
+        <td>-s</td>
+        <td>True if the file has nonzero size – returns file size in bytes.</td>
+      </tr>
+      <tr>
+        <td>-r</td>
+        <td>True if the file is readable by you.</td>
+      </tr>
+      <tr>
+        <td>-w</td>
+        <td>True if the file is writable by you.</td>
+      </tr>
+      <tr>
+        <td>-x</td>
+        <td>True if the file is executable by you.</td>
+      </tr>
+      <tr>
+        <td>-o</td>
+        <td>True if the file is owned by you.</td>
+      </tr>
+    </table><br>
+    Syntax example:
+    <br><br>
+    <div id="code">
+    &nbsp&nbsp if (-e $filename) {statement}
+    </div><br>
+    <h1>DIRECTORIES</h1>
     <br>
-    <ul>
-      <li>&nbsp&nbsp◦&nbsp&nbsp An empty string, "", is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp The number zero and the string "0" are both false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp 0.0, or any variation of 0 other than simply 0, is true.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp An empty list, (), is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp The undefined value is false.</li>
-      <li>&nbsp&nbsp◦&nbsp&nbsp Everything else is true.</li>
-    </ul> <br>
-    <h1>STRING COMPARISON</h1>
-    <br>
+    Glob takes a string and returns the matching files. * matches any text.
+    To get all the files in a directory:
+    <br><br>
     <div id="code">
-    <ul>
-      <li>&nbsp&nbsp ($a gt $b) # $a sorts alphabetically after $b</li>
-      <li>&nbsp&nbsp ($a le $b) # $a sorts alphabetically before $b</li>
-      <li>&nbsp&nbsp ($a eq $b) # $a is the same as $b</li>
-      <li>&nbsp&nbsp ($a ne $b) # $a is not the same as $b</li>
-    </ul> </div> <br>
-    <h1>Using "UNLESS"</h1><br>
-    Perl features an "unless" command:<br><br><div id="code">
-    &nbsp&nbsp unless (exists $rates($to)) {<br>
-    &nbsp&nbsp&nbsp&nbsp die "That input is invalid!\n";}<br>
+    &nbsp&nbsp my @files = glob("*")
     </div><br>
-    <h1>"ELSE" & "ELSEIF"</h1>
-    <br>
+    Open directories with opendir:
+    <br><br>
     <div id="code">
-    &nbsp&nbsp if (condition){<br>
-    &nbsp&nbsp&nbsp&nbsp # action<br>
-    &nbsp&nbsp } elseif (condition2) {<br>
-    &nbsp&nbsp&nbsp&nbsp # action 2<br>
-    &nbsp&nbsp } else {<br>
-    &nbsp&nbsp&nbsp&nbsp # everything else failed, action 3<br>
-    &nbsp&nbsp }<br>
+    &nbsp&nbsp opendir DH, "." or die $!;
     </div><br>
-    <h1>"WHILE" LOOPS</h1>
-    <br>
+    Read directories with readdir:
+    <br><br>
     <div id="code">
-    &nbsp&nbsp while (condition) {action}; <br>
-    &nbsp&nbsp # OR<br>
-    &nbsp&nbsp {action} while (condition);<br>
+    &nbsp&nbsp while ($_ = readdir(DH)) {statement}
     </div><br>
-    Example:<br><br>
-    <div id="code">
-    &nbsp&nbsp my $count = 5; <br>
-    &nbsp&nbsp print "Counting down: "; <br>
-    &nbsp&nbsp while ($count > 0) {<br>
-    &nbsp&nbsp&nbsp&nbsp print "$count ";<br>
-    &nbsp&nbsp&nbsp&nbsp count--; <br>
-    &nbsp&nbsp } # prints "5 4 3 2 1 "<br>
-    </div><br>
-    "Do-while" loops are also valid à la C or C++.<br>
-    Note: the action will execute once before the condition is evaluated.<br><br>
-    <div id="code">
-    &nbsp&nbsp do {action} while (condition) <br></div><br>
-    <h1>"UNTIL" LOOPS</h1><br>
-    <div id="code">
-    &nbsp&nbsp until (condition) {statement};<br>
-    </div><br>
-    Example: <br><br>
-    <div id="code">
-    &nbsp&nbsp my $count = 5; <br>
-    &nbsp&nbsp until ($count-- == 0) { <br>
-    &nbsp&nbsp&nbsp&nbsp print "$count ";<br>
-    &nbsp&nbsp } # prints "5 4 3 2 1 "<br>
-    </div><br>
-    <h1>BREAKING OUT OF LOOPS</h1><br>
-    To break out of a loop, use the keyword "last". For example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("a","b","c","stop","d");<br>
-    &nbsp&nbsp for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp if ($_ eq "stop") {last;}<br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp } # prints "a b c "<br>
-    </div><br>
-    <h1>SKIP & REDO ITERATIONS OF LOOPS</h1><br>
-    To skip an iteration of a loop, use the "next" keyword. Example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("a","b","c","skip","d");<br>
-    &nbsp&nbsp for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp if ($_ eq "skip") {next;}<br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp } # prints "a b c d "<br>
-    </div><br>
-    Similarly, the "redo" keyword repeats a loop iteration.<br><br>
-    <h1>LOOP LABELS</h1><br>
-    Loops can be labeled, ie. given a name before the "for", "while", or "until".<br><br>
-    The convention is that these labels are formed with all uppercase letters. For example:<br>
-    <br><div id="code">
-    &nbsp&nbsp my @array = ("keep", "going", "stop", "Naim", "Ayat");<br>
-    &nbsp&nbsp OUTERLOOP: for (@array) { <br>
-    &nbsp&nbsp&nbsp&nbsp print "$_ ";<br>
-    &nbsp&nbsp&nbsp&nbsp last OUTERLOOP if ($_ eq "stop");<br>
-    &nbsp&nbsp } # prints "keep going stop "<br>
-    </div><br>
-    Note that you can skip to a line by using
-    <div id="code">
-    goto LABEL:
-    </div>
-    but this is considered bad practice in any language.<br><br>
-    <br> <a href="/perl3.html">Here's the next part of the tutorial.</a>
-  </section>
+    The next part of this tutorial will be published here soon. Until then, you can view <a href="https://github.com/NaimAyat/Perl_Tutorials" target="_blank">the entire series on GitHub</a>.
+    </section>
 <!--END BANNER-->
   <footer>
     <ul class="social">
