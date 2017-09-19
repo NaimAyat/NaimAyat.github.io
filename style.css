@@ -246,6 +246,11 @@ h1 {
   letter-spacing: 1px;
 }
 
+h4 {
+  letter-spacing: 1px;
+  font-size: 115%;
+}
+
 h2 {
   font-family: 'Assistant', sans-serif;
   font-size: 250%;
@@ -309,6 +314,13 @@ header {
 #logo:hover {
   color: #C5B358;
   transition: 0.3s ease-in-out;
+}
+
+img.wth {
+  max-width:500px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
 }
 
 /* START NAV BAR */
@@ -448,7 +460,7 @@ nav ul li {
   width: 70%;
   max-width: 1000px;
   overflow-y: scroll;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.85);
   padding: 1em;
   border: 1px solid #ffffff;
   border-radius: .5em;
@@ -611,6 +623,9 @@ footer.second {
   header {
     z-index: 1000;
     position: absolute;
+  }
+  img.wth {
+    max-width:300px;
   }
   #logo {
     max-width: 300px;
