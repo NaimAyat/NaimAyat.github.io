@@ -36,7 +36,6 @@
     }]
   }
   </script>
-
   <script type='application/ld+json'>
   {
     "@context": "http://www.schema.org",
@@ -51,35 +50,25 @@
   }
   </script>
 
-  <script type='application/ld+json'>
-  {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "Naim Ayat",
-    "alternateName": "NaimAyat.me",
-    "url": "http://naimayat.me"
-  }
-  </script>
-
   <meta charset="utf-8" />
-  <meta name="description" content="Contact Naim Ayat.">
+  <meta name="description" content="Software published by Naim Ayat.">
   <meta name="keywords" content="Naim,Ayat,NaimAyat,NaimAyat.me,Portfolio,Computer,Science,Programming,HTML,CSS,XML,XHTML,JavaScript,Cpp,C,Perl,Python,Java">
   <meta name="author" content="Naim Ayat">
 
   <meta property="og:image" content="http://naimayat.me/favicons/og_small.png">
-  <meta property='og:title' content="Naim Ayat | Contact">
-  <meta property='og:description' content="Contact Naim Ayat.">
-  <meta property='og:url' content="http://naimayat.me/contact">
+  <meta property='og:title' content="Naim Ayat | Projects">
+  <meta property='og:description' content="The website and professional portfolio of Naim Ayat.">
+  <meta property='og:url' content="http://naimayat.me/projects">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@NaimAyat">
   <meta name="twitter:creator" content="@NaimAyat">
-  <meta name="twitter:title" content="Naim Ayat | Contact">
-  <meta name="twitter:description" content="Contact Naim Ayat.">
-  <meta name="twitter:image" content="http://naimayat.me/favicons/og_small.png">
+  <meta name="twitter:title" content="Naim Ayat | Projects">
+  <meta name="twitter:description" content="The website and professional portfolio of Naim Ayat.">
+  <meta name="twitter:image" content="http://naimayat.me/favicons/og.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Naim Ayat | Contact</title>
+  <title>Naim Ayat | Projects</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
@@ -89,6 +78,7 @@
   <link rel="manifest" href="/favicons/manifest.json">
   <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 </head>
 <body vlink="white" link="white">
   <header>
@@ -101,34 +91,28 @@
           <li><div class="dropdown">
             <a href="#"><div class="dropbtn">EXPERIENCE</div></a>
                 <div class="dropdown-content">
-                  <a href="/ziprecruiter.html">ZIPRECRUITER</a>
+                  <a href="/ziprecruiter.html" class="current">ZIPRECRUITER</a>
                   <a href="/perl.html">PERL TUTORIALS</a>
                   <a href="/projects.html">PROJECTS</a>
                 </div>
               </div></li>
-          <li><a href="/contact.html"  class="current">CONTACT</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
 <!--END HEADER-->
-  <section class ="banner-contact">
-      <form action="https://formspree.io/NaimAyat@gmail.com" method="POST">
-        <div>
-          <label for="name">Name : &nbsp </label>
-          <input type="text" id="name" name="user_name" placeholder="Firstname Lastname">
-        </div>
-        <div>
-          <label for="mail">E-mail : &nbsp </label>
-          <input type="email" id="mail" name="_replyto" placeholder="you@example.com">
-        </div>
-        <div>
-          <label for="msg">Message : &nbsp </label>
-          <textarea id="msg" name="user_message"></textarea>
-        </div>
-          <button class="button" type="submit" value="Send">Send</button>
-      </form>
-  </section>
+<section class ="banner-outer-perl">
+  <div class="banner-perl-content">
+  <h1>ZipRecruiter</h1><br>
+  In the summer of 2017, I worked as a Software Engineer at <a href="https://ziprecruiter.com" target="blank">ZipRecruiter</a>.
+  Notably, I created a web integration linking the company's bug tracking software (FogBugz) to its IT alert system (PagerDuty).
+  Now, ZipRecruiter employees are instantly notified of critical ticket postings during off-hours.
+  <br><br>
+  I also developed a FogBugz <a href="https://github.com/bipio-server/bipio" target="blank">Bip.IO</a> "pod" (standalone service container)
+  to facilitate interactions with FogBugz's API; thus strengthening ZipRecruiter's presence as a contributor to the Open Source Initiative.
+  <br>
+</section>
 <!--END BANNER-->
   <footer>
     <ul class="social">
@@ -146,9 +130,6 @@
 <!--END SOCIAL FOOTER-->
   <footer class="second">
       <a href="https://github.com/NaimAyat/NaimAyat.github.io" id= "open-source" target="_blank">&copy 2017 NAIM AYAT</a>
-      <!--Fixes Chrome glitch in which CSS transitions fire on form page load-->
-      <script> </script>
-      <!--End fix-->
   </footer>
 <!--END SECOND FOOTER-->
 </body>
