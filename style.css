@@ -319,8 +319,9 @@ header {
 img.wth {
   max-width:500px;
   display: block;
-  margin: auto;
   border-radius: 10px;
+  float: right;
+  margin-left: 10px;
 }
 
 /* START NAV BAR */
@@ -627,6 +628,7 @@ footer.second {
   }
   img.wth {
     max-width:300px;
+    display: none;
   }
   #logo {
     max-width: 300px;
@@ -714,6 +716,7 @@ footer.second {
     overflow-y: scroll;
     font-size: 70%;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
   .social {
     font-size: 65%;
