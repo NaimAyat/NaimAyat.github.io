@@ -716,7 +716,7 @@ footer.second {
     overflow-y: scroll;
     font-size: 70%;
     margin: 0 auto;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
   }
   .social {
     font-size: 65%;
