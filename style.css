@@ -98,16 +98,14 @@ label {
 }
 
 input, textarea {
+  border-radius: 5px;
+  resize: vertical;
   padding: 5px;
+  font-family: 'Assistant', sans-serif;
   font-size: 100%;
   width: 300px;
   box-sizing: border-box;
   border: 1px solid #ffffff;
-}
-
-input:focus, textarea:focus {
-  /* To give a little highlight on active elements */
-  border-color: #C5B358;to
 }
 
 textarea {
@@ -404,6 +402,7 @@ nav ul li {
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
+  background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
@@ -414,6 +413,7 @@ nav ul li {
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
+  background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
@@ -423,6 +423,7 @@ nav ul li {
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
+  background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
@@ -432,6 +433,7 @@ nav ul li {
   color: #ffffff;
   width: 100%;
   background: url("img/home-bg.png") no-repeat center center fixed;
+  background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
@@ -457,10 +459,8 @@ nav ul li {
   width:70%;
   margin-left:15%;
   margin-right:15%;
-  max-height: 350px;
   width: 70%;
   max-width: 1000px;
-  overflow-y: scroll;
   background-color: rgba(0,0,0,0.85);
   padding: 1em;
   border: 1px solid #ffffff;
@@ -589,7 +589,7 @@ footer.second {
   max-height: 20px;
   text-align: center;
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-size: 75%;
 }
 
