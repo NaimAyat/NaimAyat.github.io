@@ -679,8 +679,8 @@ a.current { color: #C5B358;}
   }
 
   .banner {
-    padding-top: 160px;
-    padding-bottom: 125px;
+    padding-top: 190px;
+    padding-bottom: 95px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
