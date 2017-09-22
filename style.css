@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
-
 td {
    width:70%;
    margin-left:20%;
@@ -64,7 +63,7 @@ tr:hover {
 }
 
 form {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.2);
   margin: 0 auto;
   width: 400px;
   padding: 1em;
@@ -213,7 +212,7 @@ textarea {
     position: absolute;
     background-color: rgba(255, 255, 255, .95);
     border: 1px solid #000000;
-    min-width: 200px;
+    min-width: 210px;
     z-index: 1;
     -webkit-animation: fadein 0.3s; /* Safari and Chrome */
     -moz-animation: fadein 0.3s; /* Firefox */
@@ -368,6 +367,7 @@ nav ul li {
   color: black;
 }
 
+
 .dropbtn {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -386,33 +386,33 @@ nav ul li {
   transition: color 0.3s ease-in-out;
 }
 
-.current {
-  color: #C5B358;
+.dropdown-content li a current{
+   color: #C5B358;
 }
 
-#current {
+.current {
   color: #C5B358;
 }
 
 /* END NAV BAR */
 
 .banner {
-  padding-top: 155px;
-  padding-bottom: 210px;
+  padding-top: 60px;
+  padding-bottom: 320px;
   color: #ffffff;
   width: 100%;
-  background: url("img/home-bg.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center fixed;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
 
 .banner-outer-perl {
-  padding-top: 85px;
-  padding-bottom: 140px;
+  padding-top: 75px;
+  padding-bottom: 130px;
   color: #ffffff;
   width: 100%;
-  background: url("img/home-bg.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center fixed;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
@@ -422,7 +422,7 @@ nav ul li {
   padding-bottom: 60px;
   color: #ffffff;
   width: 100%;
-  background: url("img/home-bg.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center fixed;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
@@ -432,14 +432,14 @@ nav ul li {
   padding-bottom: 115px;
   color: #ffffff;
   width: 100%;
-  background: url("img/home-bg.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center fixed;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
 }
 
 .banner-index {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.2);
   padding: 1em;
   border: 1px solid #ffffff;
   border-radius: .5em;
@@ -461,7 +461,7 @@ nav ul li {
   margin-right:15%;
   width: 70%;
   max-width: 1000px;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.2);
   padding: 1em;
   border: 1px solid #ffffff;
   border-radius: .5em;
@@ -593,11 +593,14 @@ footer.second {
   font-size: 75%;
 }
 
+a.current { color: #C5B358;}
+
 /* END FOOTER */
 
 /* General handheld devices & small browser windows */
 @media screen and (max-width: 1024px) {
   form {
+    background-color: rgba(0,0,0,0.85);
     margin: 0 auto;
     width: 260px;
     padding: 1em;
@@ -728,6 +731,13 @@ footer.second {
     font-size: 75%;
     padding: 10px 52px 10px 20px;
     background-color: rgba(250, 250, 250, .2);
+  }
+  .banner-index {
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  .banner-perl-content {
+    background-color: rgba(0,0,0,0.85);
   }
 }
 
