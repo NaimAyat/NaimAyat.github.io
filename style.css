@@ -401,10 +401,9 @@ nav ul li {
   padding-bottom: 320px;
   color: #ffffff;
   width: 100%;
-  background: url("img/bw.png") no-repeat center center fixed;
-  background-position: 0% 30%;
+  background: url("img/bw.png") no-repeat center center;
+  height: calc(.1vh + 130px);
   background-size: cover;
-  background-position: fix;
 }
 
 .banner-outer-perl {
@@ -412,7 +411,7 @@ nav ul li {
   padding-bottom: 130px;
   color: #ffffff;
   width: 100%;
-  background: url("img/bw.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
@@ -422,7 +421,7 @@ nav ul li {
   padding-bottom: 60px;
   color: #ffffff;
   width: 100%;
-  background: url("img/bw.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
@@ -432,7 +431,7 @@ nav ul li {
   padding-bottom: 115px;
   color: #ffffff;
   width: 100%;
-  background: url("img/bw.png") no-repeat center center fixed;
+  background: url("img/bw.png") no-repeat center center;
   background-position: 0% 30%;
   background-size: cover;
   background-position: fix;
