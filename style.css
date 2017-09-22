@@ -446,7 +446,7 @@ nav ul li {
   color: #ffffff;
   font-size: 107%;
   max-width: 600px;
-  text-align: justify;
+  text-align: center;
   margin: 0 auto;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -600,7 +600,7 @@ a.current { color: #C5B358;}
 /* General handheld devices & small browser windows */
 @media screen and (max-width: 1024px) {
   form {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.25);
     margin: 0 auto;
     width: 260px;
     padding: 1em;
@@ -681,35 +681,37 @@ a.current { color: #C5B358;}
   .banner {
     padding-top: 160px;
     padding-bottom: 125px;
-    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
-    width: 100%;
+    background-size: cover;
   }
   .banner-outer-perl {
     padding-top: 100px;
     padding-bottom: 50px;
-    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
+    background-size: cover;
     width: 100%;
   }
   .banner-outer-perl-content {
     padding-top: 90px;
     padding-bottom: 30px;
-    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
+    background-size: cover;
     width: 100%;
   }
   .banner-contact {
     padding-top: 120px;
     padding-bottom: 75px;
-    background: url("img/home-bg.png") no-repeat 45% 13% fixed;
+    background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
+    background-size: cover;
     width: 100%;
   }
   .banner-index {
-    max-width: 270px;
-    font-size: 95%;
-    text-align: justify;
+    max-width: 400px;
+    font-size: 85%;
     margin: 0 auto;
   }
   .banner-perl-content {
@@ -733,11 +735,11 @@ a.current { color: #C5B358;}
     background-color: rgba(250, 250, 250, .2);
   }
   .banner-index {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.25);
   }
 
   .banner-perl-content {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.25);
   }
 }
 
