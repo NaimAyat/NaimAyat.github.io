@@ -444,9 +444,9 @@ nav ul li {
   border: 1px solid #ffffff;
   border-radius: .5em;
   color: #ffffff;
-  font-size: 107%;
+  font-size: 105%;
   max-width: 600px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -686,7 +686,7 @@ a.current { color: #C5B358;}
     background-size: cover;
   }
   .banner-outer-perl {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 50px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
@@ -694,7 +694,7 @@ a.current { color: #C5B358;}
     width: 100%;
   }
   .banner-outer-perl-content {
-    padding-top: 90px;
+    padding-top: 105px;
     padding-bottom: 30px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
@@ -710,8 +710,8 @@ a.current { color: #C5B358;}
     width: 100%;
   }
   .banner-index {
-    max-width: 400px;
-    font-size: 85%;
+    max-width: 310px;
+    font-size: 70%;
     margin: 0 auto;
   }
   .banner-perl-content {
@@ -747,20 +747,6 @@ a.current { color: #C5B358;}
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
-  .banner-index {
-    color: #ffffff;
-    max-width: 290px;
-    font-size: 94%;
-    text-align: justify;
-    margin: 0 auto;
-  }
-  .banner-inner {
-    color: #ffffff;
-    max-width: 290px;
-    font-size: 94%;
-    text-align: justify;
-    margin: 0 auto;
-  }
   .banner {
     padding-top: 220x;
     padding-bottom: 130px;
