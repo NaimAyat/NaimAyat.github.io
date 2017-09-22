@@ -679,8 +679,8 @@ a.current { color: #C5B358;}
   }
 
   .banner {
-    padding-top: 210px;
-    padding-bottom: 95px;
+    padding-top: 185px;
+    padding-bottom: 115px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
@@ -703,7 +703,7 @@ a.current { color: #C5B358;}
   }
   .banner-contact {
     padding-top: 120px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
