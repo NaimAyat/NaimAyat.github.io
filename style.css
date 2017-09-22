@@ -418,7 +418,7 @@ nav ul li {
   background-position: fix;
 }
 .banner-outer-perl-content {
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 60px;
   color: #ffffff;
   width: 100%;
@@ -444,9 +444,9 @@ nav ul li {
   border: 1px solid #ffffff;
   border-radius: .5em;
   color: #ffffff;
-  font-size: 105%;
+  font-size: 107%;
   max-width: 600px;
-  text-align: justify;
+  text-align: center;
   margin: 0 auto;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -679,14 +679,14 @@ a.current { color: #C5B358;}
   }
 
   .banner {
-    padding-top: 185px;
-    padding-bottom: 115px;
+    padding-top: 160px;
+    padding-bottom: 125px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
   }
   .banner-outer-perl {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 50px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
@@ -694,7 +694,7 @@ a.current { color: #C5B358;}
     width: 100%;
   }
   .banner-outer-perl-content {
-    padding-top: 105px;
+    padding-top: 90px;
     padding-bottom: 30px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
@@ -703,15 +703,15 @@ a.current { color: #C5B358;}
   }
   .banner-contact {
     padding-top: 120px;
-    padding-bottom: 45px;
+    padding-bottom: 55px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
     width: 100%;
   }
   .banner-index {
-    max-width: 310px;
-    font-size: 70%;
+    max-width: 400px;
+    font-size: 95%;
     margin: 0 auto;
   }
   .banner-perl-content {
@@ -747,15 +747,23 @@ a.current { color: #C5B358;}
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+  .banner-index {
+    color: #ffffff;
+    max-width: 290px;
+    font-size: 94%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .banner-inner {
+    color: #ffffff;
+    max-width: 290px;
+    font-size: 94%;
+    text-align: justify;
+    margin: 0 auto;
+  }
   .banner {
     padding-top: 220x;
     padding-bottom: 130px;
-    color: #ffffff;
-    width: 100%;
-  }
-  .banner-contact {
-    padding-top: 120px;
-    padding-bottom: 77px;
     color: #ffffff;
     width: 100%;
   }
@@ -773,10 +781,6 @@ and (max-device-width : 667px) {
   and (-webkit-min-device-pixel-ratio : 4)
   and (-webkit-device-pixel-ratio : 4)
   and (orientation: portrait) {
-  .banner-contact {
-    padding-top: 125px;
-    padding-bottom: 82px;
-  }
   .button {
     font-size: 75%;
     padding: 10px 49.5px 10px 20px;
