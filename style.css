@@ -783,3 +783,48 @@ and (max-device-width : 667px) {
     background-color: rgba(250, 250, 250, .2);
   }
 }
+
+/* Large desktop/laptop screens */
+@media screen and (min-width: 1600px) {
+  .banner {
+    padding-top: 150px;
+    padding-bottom: 450px;
+    color: #ffffff;
+    width: 100%;
+    background: url("img/bw.png") no-repeat center center fixed;
+    background-position: 0% 30%;
+    background-size: cover;
+    background-position: fix;
+  }
+
+  .banner-outer-perl {
+    padding-top: 200px;
+    padding-bottom: 250px;
+    color: #ffffff;
+    width: 100%;
+    background: url("img/bw.png") no-repeat center center fixed;
+    background-position: 0% 30%;
+    background-size: cover;
+    background-position: fix;
+  }
+  .banner-outer-perl-content {
+    padding-top: 125px;
+    padding-bottom: 200px;
+    color: #ffffff;
+    width: 100%;
+    background: url("img/bw.png") no-repeat center center fixed;
+    background-position: 0% 30%;
+    background-size: cover;
+    background-position: fix;
+  }
+  .banner-contact {
+    padding-top: 175px;
+    padding-bottom: 250px;
+    color: #ffffff;
+    width: 100%;
+    background: url("img/bw.png") no-repeat center center fixed;
+    background-position: 0% 30%;
+    background-size: cover;
+    background-position: fix;
+  }
+}
