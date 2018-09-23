@@ -535,6 +535,8 @@ footer {
   box-shadow: 0px 0px 10px 10px #000000;
   background-color: #000000;
   width: 100%;
+  position: fixed;
+  bottom: 0%;
 }
 
 .social {
