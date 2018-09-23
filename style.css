@@ -551,6 +551,8 @@ footer {
 .social i{
   font-size: 300%;
   margin: 1%;
+  position: fixed;
+  bottom: 10%;
   padding-bottom: 5px;
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
