@@ -691,7 +691,7 @@ a.current { color: #C5B358;}
   .banner-outer-perl {
     position: fixed;
     bottom: 100px;
-    top: 20px;
+    top: 17px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
@@ -708,7 +708,8 @@ a.current { color: #C5B358;}
   }
   .banner-contact {
     position: fixed;
-    top: 1px;
+    top: -50px;
+    bottom: 10px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
