@@ -428,8 +428,8 @@ nav ul li {
   background-position: fix;
 }
 .banner-contact {
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: #ffffff;
   width: 100%;
   background: url("img/bw.png") no-repeat center center fixed;
