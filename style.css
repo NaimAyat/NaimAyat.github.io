@@ -681,31 +681,35 @@ a.current { color: #C5B358;}
   }
 
   .banner {
-    padding-top: 30%;
-    padding-bottom: 115px;
+    position: fixed;
+    bottom: 100px;
+    top: 100px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
   }
   .banner-outer-perl {
-    padding-top: 120px;
-    padding-bottom: 50px;
+    position: fixed;
+    bottom: 100px;
+    top: 100px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
     width: 100%;
   }
   .banner-outer-perl-content {
-    padding-top: 105px;
-    padding-bottom: 30px;
+    position: fixed;
+    bottom: 100px;
+    top: 100px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
     width: 100%;
   }
   .banner-contact {
-    padding-top: 120px;
-    padding-bottom: 45px;
+    position: fixed;
+    bottom: 100px;
+    top: 50px;
     background: url("img/bw.png") no-repeat 70% 10% fixed;
     color: #ffffff;
     background-size: cover;
